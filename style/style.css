@@ -1,0 +1,94 @@
+.class_card {
+  width: 100%;
+  height: 300px;   /* OU 280px ou 260px — você escolhe */
+  object-fit: cover;
+  display: block;
+}
+
+.class_card_wrapper {
+  width: 100%;
+}
+
+footer{
+
+    margin-top: 10px;;
+}
+
+h1 {
+  font-size: 2.5rem;      
+  font-weight: 700;      
+  margin-bottom: 1.5rem;  
+}
+
+
+h2 {
+  font-size: 2rem;        
+  font-weight: 600;       
+  margin-bottom: 1.25rem; 
+}
+
+
+.img-produto {
+    height: 650px;
+    object-fit: cover;
+}
+
+.img-racao-higiene {
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+.max-width-servicos {
+    max-width: 1200px; 
+}
+
+.video-servico {
+    width: 100%;
+    max-width: 500px; /* controla o tamanho do vídeo */
+    border-radius: 10px;
+}
+
+.carousel-item img {
+    max-height: 700px;
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain; /* mostra a imagem inteira */
+    background-color: #fff;
+}
+
+
+
+fieldset {
+    border: 2px solid #757d88; /* azul Bootstrap */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+legend {
+    padding: 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+.form-container {
+    max-width: 800px;         /* largura limite da caixa */
+    margin: 40px auto;        /* centraliza */
+    padding: 30px;            /* espaço interno */
+    background-color: #ffffff; /* fundo branco */
+    border-radius: 12px;      /* bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra suave */
+}
+
+
+

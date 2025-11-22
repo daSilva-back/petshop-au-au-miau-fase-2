@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="imagens/logo.png" alt="logo do petshop" width="120" />
+      <nav class="nav nav-tabs" id="tav-tab">
+        <a class="nav-link" href="index.html">Início</a>
+        <a class="nav-link" href="produtos.html">Produtos</a>
+        <a class="nav-link" href="servicos.html">Serviços</a>
+        <a class="nav-link" href="agendar.html">Agendar</a>
+        <a class="nav-link active" href="faleconosco.html">Contato</a>
+      </nav>
+
+      <hr />
+    </header>
+    <main class="mt-5">
+      <h1 class="text-center fw-bold mb-4">📞 Fale Conosco</h1>
+      <p class="text-secondary text-center mb-4">
+        Tem alguma dúvida, sugestão ou deseja agendar um horário para o seu pet?
+        <br />Preencha o formulário abaixo e entraremos em contato o mais rápido
+        possível!
+      </p>
+      <div class="form-container">
+        <form
+          action="https://formsubmit.co/silvaalexia070@gmail.com"
+          method="POST"
+        >
+          <fieldset>
+            <legend class="mb-5 text-center">Entre em contato</legend>
+            <label> Nome:</label>
+            <input
+              class="mb-4"
+              type="text"
+              id="nome"
+              name="nome"
+              pattern="[A-Za-z ]{3,}"
+              style="width: 300px"
+              placeholder="Nome Completo"
+              required
+            />
+            <br />
+            <label> Email:</label>
+            <input
+              class="mb-4"
+              type="email"
+              id="email"
+              name="email"
+              style="width: 300px"
+              placeholder="Digite seu email"
+              required
+            /><br />
+            <label>Telefone: </label>
+            <input
+              class="mb-4"
+              type="tel"
+              id="telefone"
+              name="telefone"
+              style="width: 300px"
+              placeholder="(xx) xxxxx-xxxx"
+            /><br />
+            <p><strong>Mensagem: </strong></p>
+            <textarea
+              class="mb-4"
+              id="mensagem"
+              name="mensagem"
+              rows="10"
+              cols="50"
+              placeholder="Escreva sua mensagem aqui..."
+            ></textarea>
+
+            <br />
+            <input
+              class="btn btn-outline-primary mt-auto"
+              type="submit"
+              id="enviar_mensagem"
+              value="Enviar Mensagem"
+              style="margin-right: 4px"
+            />
+            <input
+              class="btn btn-outline-primary mt-auto"
+              type="reset"
+              id="limpar"
+              value="Limpar"
+            />
+          </fieldset>
+        </form>
+      </div>
+      <br /><br />
+      <h3>📍 Informações de Contato</h3>
+      <p style="margin-left: 20px">
+        <strong>Endereço:</strong> Rua dos Bichinhos, 123 - Centro - Recife/PE
+        <br />
+        <strong>Telefone:</strong> (55) 99999-9999 <br />
+        <strong>E-mail:</strong>
+        <a href="mailto:contato@auaumiau.com">contato@auaumiau.com</a> <br />
+        <strong>Horário de funcionamento:</strong> Segunda a Sábado, das 8h às
+        18h
+      </p>
+
+      <br />
+      <h3>🐾 Siga-nos nas redes sociais:</h3>
+      <p style="margin-left: 20px">
+        <a href="#">Instagram</a> | <a href="#">Facebook</a> |
+        <a href="#">TikTok</a>
+      </p>
+    </main>
+
+    <br /><br /><br />
+    <hr />
+
+    <footer style="margin-left: 20px">
+      <p>© 2025 Petshop Auau&Miau — Todos os direitos reservados.</p>
+      <p>Desenvolvido por [Alexia da Silva]</p>
+      <p>
+        Contato:
+        <a href="mailto:contato@auaumiau.com">contato@auaumiau.com</a> |
+        Telefone: (55) 99999-9999
+      </p>
+    </footer>
+  </body>
+</html>

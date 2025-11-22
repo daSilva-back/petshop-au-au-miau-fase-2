@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel = "stylesheet" href="style/style.css">
+  
+    <title>Formulário</title>
+    <style>
+    
+      
+    </style>
+    
+  </head>
+  <body>
+     <header>
+      <img src="imagens/logo.png" alt="logo do Petshop" width="120" />
+      <br />
+
+       <nav class="nav nav-tabs" id="tav-tab">
+        <a class="nav-link" href="index.html">Início</a> 
+        <a class="nav-link" href="produtos.html">Produtos</a> 
+        <a class="nav-link " href="servicos.html">Serviços</a> 
+          <a class="nav-link active" href="agendar.html">Agendar</a>
+        <a class="nav-link" href="faleconosco.html">Contato</a>
+      </nav>
+      <hr /><br>
+      <h1 class="text-center fw-bold mb-4">🐾📋 Cadastro do Cliente e do Pet</h1>
+
+<br>
+    </header>
+    <div class="form-container">
+    <form action="https://formsubmit.co/silvaalexia070@gmail.com" method="POST">
+      <fieldset>
+        <legend class="mb-4">Dados Pessoais</legend>
+        <label>Nome: </label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          pattern="[A-Za-z ]{3,}"
+          style="width: 250px"
+          placeholder="Nome Completo"
+          required
+        /><br /><br />
+        <label>CPF:</label>
+        <input
+          type="text"
+          id="cpf"
+          name="cpf"
+          inputmode="numeric"
+          pattern="[0-9]{11}"
+          maxlength="11"
+          style="width: 120px"
+          placeholder="Digite o CPF"
+          required
+        />
+        <label> Data de Nascimento:</label>
+        <input
+          type="date"
+          id="datanasc"
+          name="dataNascimento"
+          max="2007-12-31"
+          min="1905-01-01"
+          placeholder="DDMMAAAA"
+          required
+        />
+        <label>Masculino</label>
+        <input type="radio" id="masculino" name="sexo" />
+        <label>Feminino</label>
+        <input type="radio" id="feminino" name="sexo" /><br /><br />
+        <p>
+          Estado Civil:
+          <select>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+          </select>
+          <label>Renda Mensal (opcional):</label>
+          <input
+            type="text"
+            id="rendaMensal"
+            name="rendaMensal"
+            inputmode="numeric"
+            placeholder="Digite a renda"
+          />
+        </p>
+      </fieldset><br>
+
+      <fieldset>
+        <legend class="mb-4">Endereço</legend>
+        <label>Logradouro:</label>
+        <input type="text" id="rua" name="rua" placeholder="Nome da rua" />
+        <label>Número:</label>
+        <input type="text" name="endNumero" pattern="[0-9]{1,}" placeholder="Número" required /><br /><br />
+        <label>Complemento: </label>
+        <input
+          type="text"
+          id="complemento"
+          name="complemento"
+          placeholder="Apto, Bloco, Prédio"
+        /><br /><br />
+        <label for="estado">Estado</label>
+        <select id="estado" name="estado" required>
+          <option value="acre">Acre</option>
+          <option value="alagoas">Alagoas</option>
+          <option value="amapá">Amapá</option>
+          <option value="amazonas">Amazonas</option>
+          <option value="bahia">Bahia</option>
+          <option value="ceará">Ceará</option>
+          <option value="distrito federal">Distrito Federal</option>
+          <option value="espirito santo ">Espirito Santo</option>
+          <option value="goias">Goiás</option>
+          <option value="maranhao">Maranhão</option>
+          <option value="mato_grosso">Mato Grosso</option>
+          <option value="mato_grosso_do_sul">Mato Grosso do Sul</option>
+          <option value="minas_gerais">Minas Gerais</option>
+          <option value="para">Pará</option>
+          <option value="paraiba">Paraíba</option>
+          <option value="parana">Paraná</option>
+          <option value="pernambuco">Pernambuco</option>
+          <option value="piaui">Piauí</option>
+          <option value="rio_de_janeiro">Rio de Janeiro</option>
+          <option value="rio_grande_do_norte">Rio Grande do Norte</option>
+          <option value="rio_grande_do_sul">Rio Grande do Sul</option>
+          <option value="rondonia">Rondônia</option>
+          <option value="roraima">Roraima</option>
+          <option value="santa_catarina">Santa Catarina</option>
+          <option value="sao_paulo">São Paulo</option>
+          <option value="sergipe">Sergipe</option>
+          <option value="tocantins">Tocantins</option>
+        </select>
+        <label>Cidade:</label>
+        <input
+          type="text"
+          id="cidade"
+          name="cidade"
+          pattern="[A-Za-z]{2,}"
+          placeholder="Informe a cidade"
+          required
+        />
+      </fieldset><br>
+      <fieldset>
+        <legend class="mb-4">Dados do Pet</legend>
+        <label>Nome do pet:</label>
+        <input 
+        type="Text"
+        id="nomepet"
+        name="nomePet"
+        placeholder="Nome do pet"
+        required
+        >
+        <label>Raça</label>
+        <input
+        type="text"
+        id="racaPet"
+        name="racaPet"><br /><br />
+        <label>Data de nascimento: </label>
+        <input
+        type="text"
+        id="dataNascPet"
+        name="DataNasciPet"
+        pattern="[0-9.]+"
+        placeholder="DDMMAAAA"
+    required>
+        <label>Sexo: </label>
+        <select id="sexoPet" name="sexoPet">
+            <option value="macho">
+Macho
+            </option>
+            <option value="femea">Femea</option>
+        </select>
+      </fieldset><br>
+     
+    <fieldset>
+      <legend class="mb-4">Informações do Serviço</legend>
+      <label>Serviço</label>
+      <select class="me-4"id="serviço" name="serviço" required>
+        <option value="banho&Tosa">Banho&Tosa</option>
+        <option value="Hidratação&Cuidados">Hidratação&Cuidados</option>
+      </select>
+    <label>Telebusca</label>
+    <select id="telebusca" name="telebusca" required 
+ onchange=" validaData();">
+      <option value="nao">Não</option>
+      <option value="sim">Sim</option>
+    
+    </select>
+    <div 
+    id="mostra_telebusca"
+    class="mt-4 "
+    >
+      <label id="telebusca_data">Data/Hora</label>
+      <input 
+      id="tele_data_hora"
+       onchange="validaData()"
+      name="telebusca_data_hora"
+      type="datetime-local"
+      required>
+    </div>
+    </fieldset>
+      <input 
+      type="submit" 
+      class="btn btn-outline-primary mt-auto" value="enviar">
+      </center>
+    </form>
+    </div>
+
+      <br><br><br><hr>
+    <footer style="margin-left: 20px;">
+      <p>© 2025 Petshop Auau&Miau — Todos os direitos reservados.</p>
+      <p>Desenvolvido por [Alexia da Silva]</p>
+      <p>
+        Contato:
+        <a href="mailto:contato@auaumiau.com">contato@auaumiau.com</a> |
+        Telefone: (55) 99999-9999
+      </p>
+    </footer>
+    <script src="script/script.js"></script>
+    <script>
+  window.onload = function() {
+    dataAtual();
+  };
+</script>
+  </body>
+</html>
